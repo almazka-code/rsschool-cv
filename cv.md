@@ -53,6 +53,8 @@ button.addEventListener("click", () => {
 - **Skillbox**
   - Web Development Basic Level
   - Web Development High Level
+- **RS School**
+  - JavaScript/Front-end. Stage 0.
 
 # Experience
 
