@@ -50,11 +50,11 @@ button.addEventListener("click", () => {
   - Engineer
 - **FreeCodeCamp**
   - [JavaScript Algorithms and Data Structures](https://freecodecamp.org/certification/almazka/javascript-algorithms-and-data-structures)
+- **RS School**
+  - JavaScript/Front-end. Stage 0 (in progress).
 - **Skillbox**
   - Web Development Basic Level
   - Web Development High Level
-- **RS School**
-  - JavaScript/Front-end. Stage 0.
 
 # Experience
 
