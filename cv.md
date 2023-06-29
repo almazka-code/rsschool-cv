@@ -9,6 +9,8 @@
 
 # About Me
 
+I am an experienced finance professional transitioning to a promising career in programming. With seven years of expertise in finance, I have developed strong analytical and problem-solving skills that will greatly benefit my career in Frontend Development. I have always been drawn to mathematics, which is evident from my Pascal courses at school and studying computer science at the institute to create websites. Now, I am eager to leverage my knowledge and determination to excel in the field of Frontend Development, where I can contribute my creative mindset and technical aptitude to deliver engaging and user-friendly web experiences.
+
 # Skills
 
 - HTML
@@ -55,8 +57,6 @@ button.addEventListener("click", () => {
 - **Skillbox**
   - Web Development Basic Level
   - Web Development High Level
-
-# Experience
 
 # Languages
 
