@@ -234,7 +234,7 @@ ul {
   color: white;
 }
 
-.profile__buttons--cv {
+.profile__buttons button {
   margin-right: 2rem;
 }
 
