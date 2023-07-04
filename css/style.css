@@ -607,3 +607,122 @@ ul {
 .case__link:hover {
   color: var(--light-blue); 
 }
+
+/* contacts section */
+
+.contacts__wrap {  
+  display: grid;  
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5rem;  
+  grid-row-gap: 2rem;
+  width: 100%;  
+} 
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  height: 100%;
+  font-size: 1.17rem;  
+  border: 0.1rem solid var(--dark-grey); 
+  border-radius: 1rem; 
+  padding: 3rem;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-style: normal;  
+}
+
+.contacts__icon {  
+  width: 2rem;
+  height: 2rem;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts__icon--location {
+  background-image: url("../images/location.png");
+}
+
+.contacts__icon--phone {
+  background-image: url("../images/call.png");
+}
+
+.contacts__icon--mail {
+  background-image: url("../images/email.png");
+}
+
+.contacts__icon--discord {
+  background-image: url("../images/discord.png");
+}
+
+.contacts__item p {
+  color: black;
+}
+
+.contacts__item a:hover {  
+  color: var(--light-blue); 
+}
+
+.form {
+  border: 0.1rem solid var(--dark-grey); 
+  border-radius: 1rem; 
+  padding: 2rem;
+  text-align: center;
+}
+
+.form__title {
+  margin-bottom: 1.5rem;  
+}
+
+.form__input {
+  width: 100%;
+  height: 3.2rem;
+  margin-bottom: 1.5rem;
+  padding: 1.7rem;
+  /* border: 1px solid var(--light-blue); */
+  border: none;
+  border-radius: 1rem;
+  background-color: #E9E9E9;
+  /* background-color: #e5f5f8; */
+}
+
+.form__input:focus-visible, .form__input:active:not(:focus-visible) {
+  outline: 0;
+  outline: 0.1rem solid var(--light-blue);
+}
+
+.form__input:hover:not(:focus-visible)::-moz-placeholder {
+  color: var(--light-blue);
+}
+
+.form__input:hover:not(:focus-visible):-ms-input-placeholder {
+  color: var(--light-blue);
+}
+
+.form__input:hover:not(:focus-visible)::placeholder {
+  color: var(--light-blue);
+}
+
+.form__textarea {
+  resize: none;
+  height: 10rem;
+  padding-bottom: 7rem;
+  margin-bottom: 1.5rem;
+}
+
+.form__box {
+  position: relative;
+}
+
+.form__box .just-validate-error-label {
+  position: absolute;
+  bottom: 3.2rem;
+  left: 1.5rem;  
+  font-size: 0.7rem;  
+}
