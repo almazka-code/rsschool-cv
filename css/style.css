@@ -273,3 +273,62 @@ ul {
 .icon {
   height: 2rem;
 }
+
+/* section about */
+
+.about__wrap {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  grid-gap: 5rem;
+  align-items: center;
+}
+
+.about__image {
+  width: 100%; 
+}
+
+.about__text { 
+  text-align: justify;
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, auto)); 
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1rem solid var(--dark-grey);
+  border-radius: 2rem;
+  padding: 1rem;   
+}
+
+.about__icon {
+  width: 2rem;
+  height: 2rem;
+  /* margin-bottom: 2rem; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__icon--study {
+  background-image: url("../images/exrerience.png");
+}
+
+.about__icon--projects {
+  background-image: url("../images/projects.png");
+}
+
+.about__icon--codewars {
+  background-image: url("../images/codewars.png");
+}
+
+.about__icon--languages {
+  background-image: url("../images/languages.png");
+}
