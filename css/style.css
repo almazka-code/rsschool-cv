@@ -574,3 +574,36 @@ ul {
 .box__descr {
   margin-bottom: 2rem;
 }
+
+/* section education */
+.education__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, auto)); 
+  grid-row-gap: 2rem;
+  grid-column-gap: 5rem;  
+}
+
+.education__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1rem solid var(--dark-grey);
+  border-radius: 2rem;
+  padding: 2rem;  
+  position: relative; 
+  transition: all 0.3s ease; 
+}
+
+.education__item:hover {
+  border: 0.1rem solid var(--light-blue); 
+  background-color: var(--blue);
+}
+
+.case__link {
+  color: rgb(85, 85, 85);  
+}
+
+.case__link:hover {
+  color: var(--light-blue); 
+}
