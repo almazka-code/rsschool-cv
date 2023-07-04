@@ -19,3 +19,66 @@ button.addEventListener("click", () => {
     fetchHandler();
   }
 });
+
+// validation
+
+let selector = document.querySelector("#phone");
+let im = new Inputmask("+7 (999) - 999 - 99 - 99");
+im.mask(selector);
+
+let validationForm = new JustValidate('#contacts-form',{
+  errorLabelStyle: {
+    color: '#146891'
+  },
+
+  errorFieldStyle: {
+    border: '1px solid #146891',
+  }
+})
+  
+validationForm
+.addField('#name', [
+  {
+    rule: 'required', //поле обязательно для введения
+    errorMessage: 'You did not enter a name',
+  },
+  {
+    rule: 'minLength',
+    value: 2,
+    errorMessage: 'Minimum 2 symbols',
+  },  
+  {
+    rule: 'customRegexp',
+    value: /(?=.*[a-z])(?=.*[A-Z])/,
+    errorMessage: 'Invalid format',
+  },
+])
+
+.addField('#email', [
+  {
+    rule: 'required',
+    errorMessage: 'You did not enter an email',
+  },
+  {
+    rule: 'email',
+    errorMessage: 'Mistake in the name of the mail',
+  },
+
+])
+
+.addField('#phone', [
+  {
+    validator: (value) => {
+      const phone = selector.inputmask.unmaskedvalue();
+      return Boolean(Number(phone) && phone.length > 0)
+    },
+    errorMessage: 'Write a phone number',
+  },
+  {
+    validator: (value) => {
+      const phone = selector.inputmask.unmaskedvalue();
+      return Boolean(Number(phone) && phone.length === 10)
+    },
+    errorMessage: 'Incorrect phone number',
+  },
+]);
