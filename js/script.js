@@ -1,6 +1,6 @@
 // Cats API
 
-const button = document.querySelector(".card__btn");
+const button = document.querySelector(".code__btn");
 const image = document.querySelector(".card__image");
 const url = "https://api.thecatapi.com/v1/images/search";
 
