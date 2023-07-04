@@ -332,3 +332,127 @@ ul {
 .about__icon--languages {
   background-image: url("../images/languages.png");
 }
+
+/* section skills */
+
+.skills__list {
+  display: grid;  
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(24rem, auto)); 
+  grid-column-gap: 5rem;  
+  grid-row-gap: 2rem;
+  width: 100%;
+}
+
+.skills__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem; 
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.skills__info span:nth-child(2){
+  font-weight: 500;
+}
+
+.slills__bar {
+  position: relative;
+  width: 100%;
+  height: 1rem;  
+  border-radius: 1.5rem;  
+  background-color: rgba(0, 0, 0, 0.144);  
+}
+
+.skills__progress {
+  position: absolute;
+  width: 100%;
+  height: 1rem;  
+  border-radius: 2rem;
+  background: linear-gradient(90deg, rgba(173,223,240,1) 0%, rgba(109,189,225,1) 100%); 
+}
+
+.html{
+  width: 90%;
+  animation: html 2s;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.css{
+  width: 68%;
+  animation: css 2s;
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 68%;
+  }
+}
+
+.js {
+  width: 22%;
+  animation: js 2s;
+}
+
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% { 
+    width: 22%;
+  }
+}
+
+.git {
+  width: 50%;
+  animation: git 2s;
+}
+
+@keyframes git {
+  0%{
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+.scss {
+  width: 70%;
+  animation: scss 2s;
+}
+
+@keyframes scss {
+  0% {
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+
+.figma {
+  width: 30%;
+  animation: figma 2s;
+}
+
+@keyframes figma {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
