@@ -456,3 +456,69 @@ ul {
     width: 30%;
   }
 }
+
+/* section code */
+.code__list {  
+  display: grid;  
+  /* grid-template-columns: repeat(auto-fit, minmax(17rem, auto));    */
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;     
+}
+
+.code__item {  
+  position: relative; 
+  border: 0.1rem solid var(--dark-grey); 
+  border-radius: 1rem;  
+  padding: 1rem;
+  margin: 0;
+  line-height: 1.2rem; 
+  /* background-color: rgba(245, 245, 245);     */
+}
+
+.code__item::after {  
+  position: absolute;
+  top: -1rem;
+  left: 3rem;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid var(--dark-grey); 
+  border-radius: 1rem; 
+  font-size: 1.5rem; 
+}
+
+.code__item--js::after {
+  content: 'JavaScript';
+}
+
+.code__item--result::after {
+  content: 'Result';
+}
+
+.code__item--result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;       
+}
+
+.code__text {
+  display: block;
+  overflow-x: auto;
+}
+
+.card {
+  width: 17rem;
+  height: 17rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  margin: 16px; 
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px grey;
+  margin-bottom: 2rem; 
+}
+
+.card__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;  
+} 

@@ -182,6 +182,46 @@
         </div>
       </section>
 
+      <!-- section code -->
+      <section class="code section" id="code">
+        <div class="container code__container">
+          <h2 class="code__title title">Code Example</h2>           
+          <ul class="code__list list-reset">
+            <li class="code__item code__item--js">
+              <pre class="code__pre">
+                <code class="code__text">
+    const button = document.querySelector(".btn");
+    const image = document.querySelector(".img");
+    const url = "https://api.thecatapi.com/v1/images/search";
+
+    async function fetchHandler() {
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+        image.src = data[0].url;
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    button.addEventListener("click", () => {
+      if (image.complete) {
+        fetchHandler();
+      }
+    });
+                </code>
+              </pre>    
+            </li>
+            <li class="code__item code__item--result">
+              <div class="card" id="img-box">
+                <img class="card__image" src="images/cat-default.jpg" alt="Cat" id="cat-img">
+              </div>
+              <button class="btn btn-reset card__btn btn-dark" type="button" id="cat-btn">Random Cat</button>
+            </li>
+          </ul>           
+        </div>          
+       </section>
+
 
 
 </body>
