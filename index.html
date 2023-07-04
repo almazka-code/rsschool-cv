@@ -48,17 +48,17 @@
             <p class="profile__prof">Frontend Developer</p>
             <div class="profile__buttons">
               <a class="btn btn-reset download" aria-label="Download CV" href="files/CV Olga Smirnova.pdf" download>Download CV</a>
-              <a class="btn btn-reset btn-dark" aria-label="Link to GitHub" href="#contacts">Contact Info</a>
+              <a class="btn btn-reset btn-dark" aria-label="Jump to Contacts" href="#contacts">Contact Info</a>
             </div>
             <ul class="social list-reset">
-              <li class="social__item linkedin">
+              <li class="social__item github">
                 <a aria-label="Link to GitHub" href="https://github.com/almazka-code" target="_blank">
                   <img class="icon" src="images/github.png" alt="Link to GitHub">
                 </a>      
               </li>
-              <li class="social__item github">
+              <li class="social__item linkedin">
                 <a aria-label="Link to LinkedIn" href="https://www.linkedin.com/in/almazka/" target="_blank">
-                  <img class="icon" src="images/linkedin.png" alt="Link to GitHub">
+                  <img class="icon" src="images/linkedin.png" alt="Link to LinkedIn">
                 </a>
               </li>
               <li class="social__item codewars">
@@ -216,10 +216,10 @@
               <div class="card" id="img-box">
                 <img class="card__image" src="images/cat-default.jpg" alt="Cat" id="cat-img">
               </div>
-              <button class="btn btn-reset btn-dark code__btn" type="button" id="cat-btn">Random Cat</button>
+              <button class="btn btn-reset btn-dark code__btn" type="button" id="cat-btn" aria-label="Press for random cat photo">Random Cat</button>
             </li>
-          </ul>           
-        </div>          
+          </ul>
+        </div>
        </section>
 
        <!-- section projects -->
@@ -230,7 +230,7 @@
           <ul class="projects__list list-reset">
             <li class="projects__item">              
               <div class="projects__wrap">
-                <a href="https://almazka-code.github.io/photo-studio/" class="projects__link" target="_blank">
+                <a href="https://almazka-code.github.io/photo-studio/" class="projects__link" target="_blank" aria-label="Photo preview of website Photo Studio">
                   <img class="projects__image" src="images/project1.jpg" alt="">
                 </a>                
               </div>
@@ -238,14 +238,14 @@
                 <h3 class="box__title">Website Photo Studio</h3>
                 <p class="box__descr">HTML, SCSS, Grid, JavaScript</p>
                 <div class="box__buttons">
-                  <a href="https://github.com/almazka-code/photo-studio/tree/dev" class="btn btn-reset" target="_blank">GitHub</a>
-                  <a href="https://almazka-code.github.io/photo-studio/" class="btn btn-reset" target="_blank">Live Demo</a>
+                  <a href="https://github.com/almazka-code/photo-studio/tree/dev" class="btn btn-reset" target="_blank" aria-label="Link to github of Website Photo Studio">GitHub</a>
+                  <a href="https://almazka-code.github.io/photo-studio/" class="btn btn-reset" target="_blank" aria-label="Link to website Photo Studio">Live Demo</a>
                 </div>
               </div>        
             </li>
             <li class="projects__item">              
               <div class="projects__wrap">
-                <a href="https://almazka-code.github.io/evklid/" class="projects__link" target="_blank">
+                <a href="https://almazka-code.github.io/evklid/" class="projects__link" target="_blank" aria-label="Photo preview of website Evklid">
                   <img class="projects__image" src="images/project2.jpg" alt="">
                 </a>                
               </div>
@@ -253,14 +253,14 @@
                 <h3 class="box__title">Website Evklid</h3>
                 <p class="box__descr">HTML, CSS, JavaScript</p>
                 <div class="box__buttons">
-                  <a href="https://github.com/almazka-code/evklid/tree/dev" class="btn btn-reset" target="_blank">GitHub</a>
-                  <a href="https://almazka-code.github.io/evklid/" class="btn btn-reset" target="_blank">Live Demo</a>
+                  <a href="https://github.com/almazka-code/evklid/tree/dev" class="btn btn-reset" target="_blank" aria-label="Link to github of Website Evklid">GitHub</a>
+                  <a href="https://almazka-code.github.io/evklid/" class="btn btn-reset" target="_blank" aria-label="Link to website Evklid">Live Demo</a>
                 </div>
               </div>              
             </li>
             <li class="projects__item">              
               <div class="projects__wrap">
-                <a href="https://almazka-code.github.io/academy/" class="projects__link" target="_blank">
+                <a href="https://almazka-code.github.io/academy/" class="projects__link" target="_blank" aria-label="Photo preview of Website Academy 3D">
                   <img class="projects__image" src="images/project3.jpg" alt="">
                 </a>               
               </div>
@@ -268,20 +268,11 @@
                 <h3 class="box__title">Website Academy 3D</h3>
                 <p class="box__descr">HTML, CSS, Bootstrap, JavaScript</p>
                 <div class="box__buttons">
-                  <a href="https://github.com/almazka-code/academy/tree/dev" class="btn btn-reset" target="_blank">GitHub</a>
-                  <a href="https://almazka-code.github.io/academy/" class="btn btn-reset" target="_blank">Live Demo</a>
+                  <a href="https://github.com/almazka-code/academy/tree/dev" class="btn btn-reset" target="_blank" aria-label="Link to github of website Academy 3D">GitHub</a>
+                  <a href="https://almazka-code.github.io/academy/" class="btn btn-reset" target="_blank" aria-label="Link to website Academy 3D">Live Demo</a>
                 </div>
-              </div>               
+              </div>
             </li>
-            <!-- <li class="projects__item">             
-              <div class="projects__image">
-                <image src="" alt=""></image>
-              </div>
-              <div class="projects__buttons">
-                <a href="" class="btn btn-reset">GitHub</a>
-                <a href="" class="btn btn-reset" target="_blank">Live Demo</a>
-              </div>
-            </li> -->
           </ul>
         </div>
       </section>
@@ -332,10 +323,7 @@
                     <p class="contacts__name">Location</p>
                     <p class="contacts__location">Astana, Kazakhstan</p>
                   </div>                  
-                </li>
-                <!-- <li class="contacts__item">
-                  <a href="https://github.com/almazka-code" target="_blank" aria-label="Link to GitHub">Github: almazka-code</a>  
-                </li> -->
+                </li>               
                 <li class="contacts__item">
                   <div class="contacts__icon contacts__icon--phone"></div>
                   <div class="contacts__box">
@@ -355,11 +343,8 @@
                   <div class="contacts__box">
                     <p class="contacts__name">Discord</p>
                     <p class="contacts__discord">almazka(@almazka-code)</p> 
-                  </div>                   
-                </li>                  
-                <!-- <li class="contacts__item">
-                  <a href="https://www.linkedin.com/in/almazka/" target="_blank" aria-label="Link to Linkedin">LinkedIn: https://www.linkedin.com/in/almazka/</a>  
-                </li>                         -->
+                  </div>
+                </li>
               </ul>
             </address> 
             <div class="form">
@@ -378,30 +363,30 @@
                   <textarea class="form__input form__textarea" aria-label="Write your message" name="text" placeholder="Message" autocomplete="off"></textarea>              
                 </div>              
                 <button class="form__btn btn-reset btn" aria-label="submit button" type="submit">Send message</button>
-              </form>  
-            </div>            
-          </div>                   
+              </form>
+            </div>
+          </div>
         </div>
-      </section>      
+      </section>
     </main>
 
     <!-- footer -->
     
     <footer class="footer">
       <div class="container footer__container">
-        <a class="footer__logo" href="https://rs.school/js/" target="_blank" aria-label="Link to course «JavaScript/Front-endof The Rolling Scopes Scholl">
+        <a class="footer__logo" href="https://rs.school/js/" target="_blank" aria-label="Link to course «JavaScript/Front-end of The Rolling Scopes Scholl">
           <img src="images/rs_school_logo.svg" alt="The Rolling Scopes school logo">
         </a>
         <p class="footer__text">Copyright &copy;&nbsp;2023 Olga Smirnova. All Rights Reserved</p>
         <ul class="social list-reset">
-          <li class="social__item linkedin">
+          <li class="social__item github">
             <a aria-label="Link to GitHub" href="https://github.com/almazka-code" target="_blank">
               <img class="icon" src="images/github.png" alt="Link to GitHub">
             </a>      
           </li>
-          <li class="social__item github">
+          <li class="social__item linkedin">
             <a aria-label="Link to LinkedIn" href="https://www.linkedin.com/in/almazka/" target="_blank">
-              <img class="icon" src="images/linkedin.png" alt="Link to GitHub">
+              <img class="icon" src="images/linkedin.png" alt="Link to LinkedIn">
             </a>
           </li>
           <li class="social__item codewars">
@@ -409,7 +394,7 @@
               <img class="icon" src="images/codewars-logo.png" alt="Link to Codewars">
             </a>
           </li>
-        </ul>       
+        </ul>
       </div>
     </footer> 
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script> <!--validator-->
