@@ -19,23 +19,23 @@
   <!-- header -->
   <header class="header">
     <div class="container header__container">
-      <a aria-label="Link to GitHub" class="header__title title" href="https://github.com/almazka-code"
-        target="_blank">Olga Smirnova</a>
+      <a class="header__title title" href="https://github.com/almazka-code" target="_blank"
+        aria-label="Link to GitHub">Olga Smirnova</a>
       <nav class="nav header__nav">
         <div class="close">
           <button class="header__close close__btn btn-reset" aria-label="Закрыть окно"></button>
         </div>
 
         <ul class="nav__list list-reset">
-          <li class="nav__item"><a href="#about" class="nav__link" aria-label="Jump to About">About</a></li>
-          <li class="nav__item"><a href="#skills" class="nav__link" aria-label="Jump to Skills">Skills</a></li>
-          <li class="nav__item"><a href="#code" class="nav__link" aria-label="Jump to Code">Code</a></li>
-          <li class="nav__item"><a href="#projects" class="nav__link" aria-label="Jump to Projects">Projects</a></li>
-          <li class="nav__item"><a href="#education" class="nav__link" aria-label="Jump to Education">Education</a></li>
-          <li class="nav__item"><a href="#contacts" class="nav__link" aria-label="Jump to Contacts">Contact</a></li>
+          <li class="nav__item"><a class="nav__link" href="#about" aria-label="Jump to About">About</a></li>
+          <li class="nav__item"><a class="nav__link" href="#skills" aria-label="Jump to Skills">Skills</a></li>
+          <li class="nav__item"><a class="nav__link" href="#code" aria-label="Jump to Code">Code</a></li>
+          <li class="nav__item"><a class="nav__link" href="#projects" aria-label="Jump to Projects">Projects</a></li>
+          <li class="nav__item"><a class="nav__link" href="#education" aria-label="Jump to Education">Education</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contacts" aria-label="Jump to Contacts">Contact</a></li>
         </ul>
       </nav>
-      <button aria-label="Menu" class="btn-reset burger">
+      <button class="btn-reset burger" aria-label="Menu">
         <span class="burger__line"></span>
         <span class="burger__line"></span>
         <span class="burger__line"></span>
@@ -54,23 +54,23 @@
           <h1 class="profile__title">Olga Smirnova</h1>
           <p class="profile__prof">Frontend Developer</p>
           <div class="profile__buttons">
-            <a class="btn btn-reset download" aria-label="Download CV" href="files/CV_Olga_Smirnova.pdf"
+            <a class="btn btn-reset download" href="files/CV_Olga_Smirnova.pdf" aria-label="Download CV"
               download>Download&nbsp;CV</a>
-            <a class="btn btn-reset btn-dark" aria-label="Jump to Contacts" href="#contacts">Contact Info</a>
+            <a class="btn btn-reset btn-dark" href="#contacts" aria-label="Jump to Contacts">Contact Info</a>
           </div>
           <ul class="social list-reset">
             <li class="social__item github">
-              <a aria-label="Link to GitHub" href="https://github.com/almazka-code" target="_blank">
+              <a href="https://github.com/almazka-code" target="_blank" aria-label="Link to GitHub">
                 <img class="icon" src="images/github.png" alt="Link to GitHub">
               </a>
             </li>
             <li class="social__item linkedin">
-              <a aria-label="Link to LinkedIn" href="https://www.linkedin.com/in/almazka/" target="_blank">
+              <a href="https://www.linkedin.com/in/almazka/" target="_blank" aria-label="Link to LinkedIn">
                 <img class="icon" src="images/linkedin.png" alt="Link to LinkedIn">
               </a>
             </li>
             <li class="social__item codewars">
-              <a aria-label="Link to Codewars" href="https://www.codewars.com/users/almazka" target="_blank">
+              <a href="https://www.codewars.com/users/almazka" target="_blank" aria-label="Link to Codewars">
                 <img class="icon" src="images/codewars-logo.png" alt="Link to Codewars">
               </a>
             </li>
@@ -225,9 +225,9 @@
           </li>
           <li class="code__item code__item--result">
             <div class="card" id="img-box">
-              <img class="card__image" src="images/cat-default.jpg" alt="Cat" id="cat-img">
+              <img class="card__image" id="cat-img" src="images/cat-default.jpg" alt="Cat">
             </div>
-            <button class="btn btn-reset btn-dark code__btn" type="button" id="cat-btn"
+            <button class="btn btn-reset btn-dark code__btn" id="cat-btn" type="button"
               aria-label="Press for random cat photo">Random Cat</button>
           </li>
         </ul>
@@ -242,7 +242,7 @@
         <ul class="projects__list list-reset">
           <li class="projects__item">
             <div class="projects__wrap">
-              <a href="https://almazka-code.github.io/photo-studio/" class="projects__link" target="_blank"
+              <a class="projects__link" href="https://almazka-code.github.io/photo-studio/" target="_blank"
                 aria-label="Photo preview of website Photo Studio">
                 <img class="projects__image" src="images/project1.jpg" alt="Photo preview of website Photo Studio">
               </a>
@@ -251,16 +251,16 @@
               <h3 class="box__title">Website Photo Studio</h3>
               <p class="box__descr">HTML, SCSS, Grid, JavaScript</p>
               <div class="box__buttons">
-                <a href="https://github.com/almazka-code/photo-studio/tree/dev" class="btn btn-reset box__btn"
+                <a class="btn btn-reset box__btn" href="https://github.com/almazka-code/photo-studio/tree/dev"
                   target="_blank" aria-label="Link to github of Website Photo Studio">GitHub</a>
-                <a href="https://almazka-code.github.io/photo-studio/" class="btn btn-reset box__btn" target="_blank"
+                <a class="btn btn-reset box__btn" href="https://almazka-code.github.io/photo-studio/" target="_blank"
                   aria-label="Link to website Photo Studio">Demo</a>
               </div>
             </div>
           </li>
           <li class="projects__item">
             <div class="projects__wrap">
-              <a href="https://almazka-code.github.io/evklid/" class="projects__link" target="_blank"
+              <a class="projects__link" href="https://almazka-code.github.io/evklid/" target="_blank"
                 aria-label="Photo preview of website Evklid">
                 <img class="projects__image" src="images/project2.jpg" alt="Photo preview of website Evklid">
               </a>
@@ -269,16 +269,16 @@
               <h3 class="box__title">Website Evklid</h3>
               <p class="box__descr">HTML, CSS, JavaScript</p>
               <div class="box__buttons">
-                <a href="https://github.com/almazka-code/evklid/tree/dev" class="btn btn-reset box__btn" target="_blank"
+                <a class="btn btn-reset box__btn" href="https://github.com/almazka-code/evklid/tree/dev" target="_blank"
                   aria-label="Link to github of Website Evklid">GitHub</a>
-                <a href="https://almazka-code.github.io/evklid/" class="btn btn-reset box__btn" target="_blank"
+                <a class="btn btn-reset box__btn" href="https://almazka-code.github.io/evklid/" target="_blank"
                   aria-label="Link to website Evklid">Demo</a>
               </div>
             </div>
           </li>
           <li class="projects__item">
             <div class="projects__wrap">
-              <a href="https://almazka-code.github.io/academy/" class="projects__link" target="_blank"
+              <a class="projects__link" href="https://almazka-code.github.io/academy/" target="_blank"
                 aria-label="Photo preview of Website Academy 3D">
                 <img class="projects__image" src="images/project3.jpg" alt="Photo preview of Website Academy 3D">
               </a>
@@ -287,9 +287,9 @@
               <h3 class="box__title">Website Academy&nbsp;3D</h3>
               <p class="box__descr">HTML, CSS, Bootstrap, JavaScript</p>
               <div class="box__buttons">
-                <a href="https://github.com/almazka-code/academy/tree/dev" class="btn btn-reset box__btn"
+                <a class="btn btn-reset box__btn" href="https://github.com/almazka-code/academy/tree/dev"
                   target="_blank" aria-label="Link to github of website Academy 3D">GitHub</a>
-                <a href="https://almazka-code.github.io/academy/" class="btn btn-reset box__btn" target="_blank"
+                <a class="btn btn-reset box__btn" href="https://almazka-code.github.io/academy/" target="_blank"
                   aria-label="Link to website Academy 3D">Demo</a>
               </div>
             </div>
@@ -312,9 +312,9 @@
           <li class="education__item case">
             <span class="case__year">2023</span>
             <h3 class="case__title">FreeCodeCamp</h3>
-            <a class="case__link" aria-label="Link to certificate"
+            <a class="case__link"
               href="https://freecodecamp.org/certification/almazka/javascript-algorithms-and-data-structures"
-              target="_blank">
+              target="_blank" aria-label="Link to certificate">
               JavaScript Algorithms and Data Structures
             </a>
           </li>
@@ -351,7 +351,7 @@
                 <div class="contacts__icon contacts__icon--phone"></div>
                 <div class="contacts__box">
                   <p class="contacts__name">Phone</p>
-                  <a href="tel:+79999999999" class="contacts__phone" aria-label="Link to phone number">+7&nbsp;999
+                  <a class="contacts__phone" href="tel:+79999999999" aria-label="Link to phone number">+7&nbsp;999
                     999-99-99</a>
                 </div>
               </li>
@@ -359,7 +359,7 @@
                 <div class="contacts__icon contacts__icon--mail"></div>
                 <div class="contacts__box">
                   <p class="contacts__name">Email</p>
-                  <a href="mailto:almazkacode@gmail.com" class="contacts__mail"
+                  <a class="contacts__mail" href="mailto:almazkacode@gmail.com"
                     aria-label="Link to email">almazkacode@gmail.com</a>
                 </div>
               </li>
@@ -373,25 +373,25 @@
             </ul>
           </address>
           <div class="form">
-            <form id="contacts-form" class="contacts__form" autocomplete="off">
+            <form class="contacts__form" id="contacts-form" autocomplete="off">
               <h3 class="form__title">Write me&nbsp;a&nbsp;message</h3>
               <div class="form__box">
-                <input class="form__input" aria-label="Write your name" id="name" type="text" name="name"
-                  placeholder="Name" autocomplete="off">
+                <input class="form__input" id="name" name="name" type="text" placeholder="Name" autocomplete="off"
+                  aria-label="Write your name">
               </div>
               <div class="form__box">
-                <input class="form__input" aria-label="Write your email" id="email" type="email" name="email"
-                  placeholder="E-mail" autocomplete="off">
+                <input class="form__input" id="email" name="email" type="email" placeholder="E-mail" autocomplete="off"
+                  aria-label="Write your email">
               </div>
               <div class="form__box">
-                <input class="form__input" aria-label="Write your phone number" id="phone" type="tel" name="phone"
-                  placeholder="Phone number" autocomplete="off">
+                <input class="form__input" id="phone" name="phone" type="tel" placeholder="Phone number"
+                  autocomplete="off" aria-label="Write your phone number">
               </div>
               <div class="form__box">
-                <textarea class="form__input form__textarea" id="message" aria-label="Write your message" name="text"
-                  placeholder="Message" autocomplete="off"></textarea>
+                <textarea class="form__input form__textarea" id="message" name="text" placeholder="Message"
+                  autocomplete="off" aria-label="Write your message"></textarea>
               </div>
-              <button id="form_btn" class="form__btn btn-reset btn" aria-label="submit button" type="submit">Send
+              <button class="form__btn btn-reset btn" id="form_btn" type="submit" aria-label="submit button">Send
                 message</button>
             </form>
           </div>
@@ -412,17 +412,17 @@
           Reserved</span></p>
       <ul class="social list-reset">
         <li class="social__item github">
-          <a aria-label="Link to GitHub" href="https://github.com/almazka-code" target="_blank">
+          <a href="https://github.com/almazka-code" target="_blank" aria-label="Link to GitHub">
             <img class="icon" src="images/github.png" alt="Link to GitHub">
           </a>
         </li>
         <li class="social__item linkedin">
-          <a aria-label="Link to LinkedIn" href="https://www.linkedin.com/in/almazka/" target="_blank">
+          <a href="https://www.linkedin.com/in/almazka/" target="_blank" aria-label="Link to LinkedIn">
             <img class="icon" src="images/linkedin.png" alt="Link to LinkedIn">
           </a>
         </li>
         <li class="social__item codewars">
-          <a aria-label="Link to Codewars" href="https://www.codewars.com/users/almazka" target="_blank">
+          <a href="https://www.codewars.com/users/almazka" target="_blank" aria-label="Link to Codewars">
             <img class="icon" src="images/codewars-logo.png" alt="Link to Codewars">
           </a>
         </li>
