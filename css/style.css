@@ -59,7 +59,7 @@ a, .btn {
   transition: all 0.3s ease;
 }
 
-img {
+img {  
 	max-width: 100%;
 }
 
@@ -67,8 +67,8 @@ body {
   min-width: 320px;
   font-family: "Poppins", sans-serif;
   font-weight: 400; 
-  font-size: 1rem;
-  line-height: 2rem;  
+  font-size: clamp(0.875rem, 0.84rem + 0.18vw, 1rem);
+  line-height: 2rem;
 }
 
 p {
@@ -125,22 +125,36 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3vh 75px;
+  padding: 2rem 75px;
 }
 
 .title {  
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
+  font-size: clamp(1.25rem, 0.9rem + 1.8vw, 2.5rem);
   text-align: center;
   margin-bottom: 4rem;
 }
 
 .header__title {
   margin-bottom: 0;
-  font-size: 2rem;
+  font-size: clamp(1.25rem, 1rem + 1vw, 2rem);
 }
 
 .header__title:hover {
   color: var(--light-blue);
+}
+
+.close {
+  display: none;
+}
+
+.close__btn {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/close.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;  
 }
 
 .nav__list {
@@ -154,7 +168,7 @@ ul {
 }
 
 .nav__link {
-  font-size: 1.5rem;
+  font-size: clamp(1.125rem, 1rem + 0.54vw, 1.5rem);
 }
 
 .nav__link:hover {
@@ -177,19 +191,12 @@ ul {
   padding-bottom: 7rem;  
 }
 
-/* .profile__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 17rem;  
-} */
-
 .profile__container {
-  display: grid;
+  display: grid;  
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
-  grid-gap: 5rem;
+  grid-gap: 5rem; 
 }
 
 .profile__image { 
@@ -203,22 +210,25 @@ ul {
 }
 
 .profile__text {   
-  font-size: 1.2rem;  
+  /* font-size: 1.2rem;   */
+  font-size: clamp(0.9rem, 0.85rem + 0.45vw, 1.25rem);
   margin-bottom: 2rem;
 }
 
 .profile__title {
-  font-size: 3rem;   
+  /* font-size: 3rem;    */
+  font-size: clamp(1.5rem, 1rem + 2vw, 3rem);
   margin-bottom: 2rem;
 }
 
 .profile__prof {
-  font-size: 1.75rem;  
+  /* font-size: 1.75rem;   */
+  font-size: clamp(1.125rem, 0.95rem + 0.9vw, 1.75rem);
   margin-bottom: 2rem;  
 }
 
 .btn {
-  min-width: 10rem;    
+  min-width: 10rem;
   padding: 1rem;
   border: 0.1rem solid var(--dark-grey);
   border-radius: 2rem;
@@ -352,7 +362,7 @@ ul {
   align-items: center;
   padding: 0 1rem; 
   margin-bottom: 0.5rem;
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 0.9rem + 0.45vw, 1.3rem);  
 }
 
 .skills__info span:nth-child(2){
@@ -481,7 +491,7 @@ ul {
   /* background-color: rgba(245, 245, 245);     */
   flex-grow: 1;
   /* flex-shrink: 0; */
-  flex-basis: calc(40% - 2.5rem);
+  flex-basis: calc(40% - 2.5rem);  
 }
 
 .code__item::after {  
@@ -492,7 +502,7 @@ ul {
   padding: 0.5rem 1rem;
   border: 0.1rem solid var(--dark-grey); 
   border-radius: 1rem; 
-  font-size: 1.5rem; 
+  font-size: 1.5rem;  
 }
 
 .code__item--js::after {
@@ -554,16 +564,6 @@ ul {
   border: 0.1rem solid var(--light-blue); 
 }
  
-.box__buttons {
-  display: flex;
-  justify-content: space-between;
-} 
-
-.projects__buttons a {
-  padding: 0.5rem;    
-  display: inline-block;
-}
-
 .projects__wrap {
   margin-bottom: 2rem;
 }
@@ -577,11 +577,22 @@ ul {
 }
 
 .box__title {
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 0.9rem + 0.45vw, 1.3rem);
 }
 
 .box__descr {
   margin-bottom: 2rem;
+}
+
+.box__btn {  
+  min-width: 8rem;
+  padding: 0.7rem;
+}
+
+.box__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;  
 }
 
 /* section education */
@@ -601,13 +612,14 @@ ul {
   border-radius: 2rem;
   padding: 2rem;  
   position: relative; 
-  transition: all 0.3s ease; 
+  text-align: center;
+  /* transition: all 0.3s ease;  */
 }
 
-.education__item:hover {
+/* .education__item:hover {
   border: 0.1rem solid var(--light-blue); 
   background-color: var(--blue);
-}
+} */
 
 .case__link {
   color: rgb(85, 85, 85);  
@@ -643,7 +655,7 @@ ul {
   justify-content: center;
   gap: 2rem;
   height: 100%;
-  font-size: 1.17rem;  
+  font-size: clamp(0.9rem, 0.8rem + 0.45vw, 1.17rem);
   border: 0.1rem solid var(--dark-grey); 
   border-radius: 1rem; 
   padding: 3rem;  
@@ -747,7 +759,7 @@ ul {
   position: absolute;
   bottom: 3.2rem;
   left: 1.5rem;  
-  font-size: 0.7rem;  
+  font-size: clamp(0.56rem, 0.53rem + 0.18vw, 0.7rem);
 }
 
 
@@ -768,7 +780,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3vh 75px;
+  padding: 2rem 75px;
 }
 
 .footer__logo {
