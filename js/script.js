@@ -5,18 +5,18 @@ let menu = document.querySelector('.header__nav');
 let menuLinks = menu.querySelectorAll('.nav__link');
 let closeBtnBurger = document.querySelector('.header__close');
 
-burger.addEventListener('click', function() {  
+burger.addEventListener('click', function() {
   menu.classList.toggle('header__nav--active');
   document.body.classList.toggle('stop-scroll');
 });
 
-closeBtnBurger.addEventListener('click', function() {  
-  menu.classList.remove('header__nav--active');  
+closeBtnBurger.addEventListener('click', function() {
+  menu.classList.remove('header__nav--active');
   document.body.classList.remove('stop-scroll');
 });
 
 menuLinks.forEach(function(el) {
-  el.addEventListener('click', function() {    
+  el.addEventListener('click', function() {
     menu.classList.remove('header__nav--active');
     document.body.classList.remove('stop-scroll');
   });
@@ -62,7 +62,7 @@ let validationForm = new JustValidate('#contacts-form',{
     border: '1px solid #146891',
   }
 })
-  
+
 validationForm
 .addField('#name', [
   {
@@ -73,7 +73,7 @@ validationForm
     rule: 'minLength',
     value: 2,
     errorMessage: 'Minimum 2 symbols',
-  },  
+  },
   {
     rule: 'customRegexp',
     value: /(?=.*[a-z])(?=.*[A-Z])/,

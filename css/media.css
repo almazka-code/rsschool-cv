@@ -12,7 +12,7 @@
   }
 
   .about__list {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, auto)); 
+    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
   }
@@ -76,7 +76,7 @@
     z-index: 1000;
     margin-left: 0;
     margin-right: 0;
-    padding: 3rem;    
+    padding: 3rem;
     box-shadow: 0 0 5px #888;
     background-color: #fff;
     overflow-y: auto;
@@ -92,7 +92,7 @@
   .nav__item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 2rem;
-  } 
+  }
 
   .header__nav--active {
     visibility: visible;
@@ -120,7 +120,7 @@
     top: 50%;
     transform: rotate(-45deg);
     transform-origin: center;
-    transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;   
+    transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
   }
 
   .stop-scroll {
@@ -130,13 +130,13 @@
   /* end of the burger */
 
 
-  .btn {    
-    padding: 1.2rem;   
+  .btn {
+    padding: 1.2rem;
     line-height: 1rem;
-  } 
+  }
 
-  .profile__image { 
-    width: 85%;    
+  .profile__image {
+    width: 85%;
   }
 
   .skills__list {
@@ -156,11 +156,11 @@
   }
 }
 
-@media (max-width: 991.98px) {  
+@media (max-width: 991.98px) {
   .container {
     padding: 0 30px;
   }
-  
+
   .header__container {
     padding: 1rem 30px;
   }
@@ -169,27 +169,27 @@
     padding: 1rem 30px;
   }
 
-  .profile__image { 
-    width: 100%;    
+  .profile__image {
+    width: 100%;
   }
 
-  .profile__text {       
+  .profile__text {
     margin-bottom: 1rem;
   }
-  
-  .profile__title {    
+
+  .profile__title {
     margin-bottom: 1rem;
-  } 
+  }
 }
 
 @media (max-width: 767.98px) {
   .section {
     padding-top: 4rem;
-    padding-bottom: 4rem;  
+    padding-bottom: 4rem;
   }
 
-  .profile__container {    
-    grid-template-columns: 1fr;   
+  .profile__container {
+    grid-template-columns: 1fr;
   }
 
   .profile__image {
@@ -207,7 +207,7 @@
 
   .code__item:nth-child(1) {
     width: 100%;
-    overflow-x: scroll;    
+    overflow-x: scroll;
   }
 
   .footer__text {
@@ -216,7 +216,7 @@
 
   .code__item::after {
     display: none;
-  }  
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -224,53 +224,53 @@
     line-height: 1.7rem;
   }
 
-  .container {    
-    padding: 0 20px;    
+  .container {
+    padding: 0 20px;
   }
-  
-  .header__container {    
+
+  .header__container {
     padding: 1rem 20px;
   }
 
   .header__nav {
     padding: 2rem;
   }
-  
-  .footer__container {    
+
+  .footer__container {
     padding: 1rem 20px;
   }
 
   .section {
     padding-top: 3rem;
-    padding-bottom: 3rem;  
+    padding-bottom: 3rem;
   }
 
   .profile__image img {
     max-width: 70%;
   }
 
-  .btn {    
-    padding: 0.8rem;   
+  .btn {
+    padding: 0.8rem;
     min-width: 6rem;
-  } 
+  }
 
   .download {
     margin-right: 1rem;
   }
 
-  .profile__prof {    
-    margin-bottom: 1.5rem;  
+  .profile__prof {
+    margin-bottom: 1.5rem;
   }
 
   .social__item:not(:last-child) {
     margin-right: 1rem;
   }
-  
+
   .icon {
     height:1.5rem;
   }
 
-  .title {    
+  .title {
     margin-bottom: 3rem;
   }
 
@@ -278,12 +278,12 @@
     margin-bottom: 0;
   }
 
-  .about__list {    
-    grid-template-columns: repeat(auto-fit, minmax(16rem, auto));     
+  .about__list {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, auto));
   }
 
-  .skills__list {    
-    grid-template-columns: repeat(auto-fit, minmax(16rem, auto));     
+  .skills__list {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, auto));
   }
 
   .card {
@@ -291,12 +291,12 @@
     height: 12rem;
   }
 
-  .projects__list {   
-    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));    
+  .projects__list {
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
   }
 
-  .projects__item { 
-    padding: 1rem;    
+  .projects__item {
+    padding: 1rem;
   }
 
   .projects__wrap {
@@ -307,8 +307,8 @@
     margin-bottom: 1.5rem;
   }
 
-  .education__list { 
-    grid-template-columns: repeat(auto-fill, minmax(16rem, auto));    
+  .education__list {
+    grid-template-columns: repeat(auto-fill, minmax(16rem, auto));
   }
 
   .education__item {
@@ -319,25 +319,25 @@
     padding: 1rem;
   }
 
-  .contacts__item {    
-    gap: 1rem;    
+  .contacts__item {
+    gap: 1rem;
   }
 
-  .contacts__icon {  
+  .contacts__icon {
     width: 1.5rem;
-    height: 1.5rem;    
+    height: 1.5rem;
   }
 
   .form {
     padding: 1rem;
   }
 
-  .form__input {    
-    min-width: 15rem;    
+  .form__input {
+    min-width: 15rem;
   }
 
-  .form__textarea {    
-    height: 10rem;   
+  .form__textarea {
+    height: 10rem;
   }
 
   .footer__logo {
