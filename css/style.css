@@ -507,11 +507,11 @@ ul {
 }
 
 .code__item--js::after {
-  content: 'JavaScript';
+  content: "JavaScript";
 }
 
 .code__item--result::after {
-  content: 'Result';
+  content: "Result";
 }
 
 .code__item--result {
