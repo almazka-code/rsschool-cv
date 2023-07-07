@@ -9,7 +9,7 @@
 
 # About Me
 
-I am a Frontend Developer living in Astana, Kazakhstan. I know HTML, CSS (SASS), and JavaScript. My goal is to learn everything new and exciting. I love to code and can spend a lot of time doing what interests me. I am looking forward to working in teams as well as individually. I am ready not only to deepen my knowledge but also to apply it to real products.
+I am a Frontend Developer living in Astana. I know HTML, CSS, and JavaScript. I love to code and can spend a lot of time doing what interests me. I am looking forward to working in teams as well as individually. I am ready not only to deepen my knowledge but also to apply it to real products.
 
 # Skills
 
@@ -55,8 +55,7 @@ button.addEventListener("click", () => {
 - **RS School**
   - JavaScript/Front-end. Stage 0 (in progress).
 - **Skillbox**
-  - Web Development Basic Level
-  - Web Development High Level
+  - Web Development
 
 # Languages
 

@@ -1,11 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Olga Smirnova</title>
+
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
-<body>
-  <h1>Olga Smirnova</h1>
+
+<body class="body">
+
+  <!-- header -->
+  <header class="header">
+    <div class="container header__container">
+      <a class="header__title title" href="https://github.com/almazka-code" target="_blank"
+        aria-label="Link to GitHub">Olga Smirnova</a>
+      <nav class="nav header__nav">
+        <div class="close">
+          <button class="header__close close__btn btn-reset" aria-label="Закрыть окно"></button>
+        </div>
+
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a class="nav__link" href="#about" aria-label="Jump to About">About</a></li>
+          <li class="nav__item"><a class="nav__link" href="#skills" aria-label="Jump to Skills">Skills</a></li>
+          <li class="nav__item"><a class="nav__link" href="#code" aria-label="Jump to Code">Code</a></li>
+          <li class="nav__item"><a class="nav__link" href="#projects" aria-label="Jump to Projects">Projects</a></li>
+          <li class="nav__item"><a class="nav__link" href="#education" aria-label="Jump to Education">Education</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contacts" aria-label="Jump to Contacts">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="btn-reset burger" aria-label="Menu">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- section profile -->
+
+    <section class="section profile">
+      <div class="container profile__container">
+        <div class="profile__descr">
+          <p class="profile__text">Hello, I&rsquo;m</p>
+          <h1 class="profile__title">Olga Smirnova</h1>
+          <p class="profile__prof">Frontend Developer</p>
+          <div class="profile__buttons">
+            <a class="btn btn-reset download" href="files/CV_Olga_Smirnova.pdf" aria-label="Download CV"
+              download>Download&nbsp;CV</a>
+            <a class="btn btn-reset btn-dark" href="#contacts" aria-label="Jump to Contacts">Contact Info</a>
+          </div>
+          <ul class="social list-reset">
+            <li class="social__item github">
+              <a href="https://github.com/almazka-code" target="_blank" aria-label="Link to GitHub">
+                <img class="icon" src="images/github.png" alt="Link to GitHub">
+              </a>
+            </li>
+            <li class="social__item linkedin">
+              <a href="https://www.linkedin.com/in/almazka/" target="_blank" aria-label="Link to LinkedIn">
+                <img class="icon" src="images/linkedin.png" alt="Link to LinkedIn">
+              </a>
+            </li>
+            <li class="social__item codewars">
+              <a href="https://www.codewars.com/users/almazka" target="_blank" aria-label="Link to Codewars">
+                <img class="icon" src="images/codewars-logo.png" alt="Link to Codewars">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="profile__image">
+          <img src="images/profile.png" alt="Olga Smirnova profile photo">
+        </div>
+      </div>
+    </section>
+
+    <!-- section about -->
+
+    <section class="section about" id="about">
+      <div class="container about__container">
+        <h2 class="about__title title">About&nbsp;me</h2>
+        <div class="about__wrap">
+          <div class="about__image">
+            <img src="images/about.png" alt="Olga Smirnova profile photo">
+          </div>
+          <div class="about__descr">
+            <ul class="about__list list-reset">
+              <li class="about__item descr">
+                <div class="about__icon about__icon--study"></div>
+                <h3 class="descr__title">Experience</h3>
+                <p class="descr__text">6&nbsp;months</p>
+                <p class="descr__text">Web Developer</p>
+              </li>
+              <li class="about__item descr">
+                <div class="about__icon about__icon--projects"></div>
+                <h3 class="descr__title">Projects</h3>
+                <p class="descr__text">10+&nbsp;Websites</p>
+                <p class="descr__text">7+&nbsp;JS Apps</p>
+              </li>
+              <li class="about__item descr">
+                <div class="about__icon about__icon--codewars"></div>
+                <h3 class="descr__title">Codewars</h3>
+                <p class="descr__text">200+ Completed Tasks</p>
+                <p class="descr__text">Honor Percentile: Top&nbsp;13.781%</p>
+              </li>
+              <li class="about__item descr">
+                <div class="about__icon about__icon--languages"></div>
+                <h3 class="descr__title">Languages</h3>
+                <p class="descr__text">Russian (Native speaker)</p>
+                <p class="descr__text">English (B1&nbsp;Intermediate)</p>
+              </li>
+            </ul>
+            <p class="about__text">
+              I&nbsp;am a&nbsp;Frontend Developer living in&nbsp;Astana. I&nbsp;know HTML, CSS, and JavaScript.
+              I&nbsp;love to&nbsp;code and can spend a&nbsp;lot of&nbsp;time doing what interests&nbsp;me. I&nbsp;am
+              looking forward to&nbsp;working in&nbsp;teams as&nbsp;well as&nbsp;individually. I&nbsp;am ready not only
+              to&nbsp;deepen my&nbsp;knowledge but also to&nbsp;apply it&nbsp;to&nbsp;real products.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section skills -->
+
+    <section class="section skills" id="skills">
+      <div class="container skills__container">
+        <h2 class="skills__title title">Skills</h2>
+        <ul class="skills__list list-reset">
+          <li class="skills__item">
+            <div class="skills__info">
+              <span>HTML</span>
+              <span>90%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__progress html"></span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__info">
+              <span>Git</span>
+              <span>50%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__progress git"></span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__info">
+              <span>CSS</span>
+              <span>68%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__progress css"></span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__info">
+              <span>SCSS</span>
+              <span>70%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__progress scss"></span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__info">
+              <span>JavaScript</span>
+              <span>15%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__progress js"></span>
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__info">
+              <span>Figma</span>
+              <span>30%</span>
+            </div>
+            <div class="skills__bar">
+              <span class="skills__progress figma"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- section code -->
+    <section class="code section" id="code">
+      <div class="container code__container">
+        <h2 class="code__title title">Code Example</h2>
+        <ul class="code__list list-reset">
+          <li class="code__item code__item--js">
+            <pre class="code__pre">
+                <code class="code__text">
+    const button = document.querySelector(".btn");
+    const image = document.querySelector(".img");
+    const url = "https://api.thecatapi.com/v1/images/search";
+
+    async function fetchHandler() {
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+        image.src = data[0].url;
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    button.addEventListener("click", () => {
+      if (image.complete) {
+        fetchHandler();
+      }
+    });
+                </code>
+              </pre>
+          </li>
+          <li class="code__item code__item--result">
+            <div class="card" id="img-box">
+              <img class="card__image" id="cat-img" src="images/cat-default.jpg" alt="Cat">
+            </div>
+            <button class="btn btn-reset btn-dark code__btn" id="cat-btn" type="button"
+              aria-label="Press for random cat photo">Random Cat</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- section projects -->
+
+    <section class="projects section" id="projects">
+      <div class="container projects__container">
+        <h2 class="projects__title title">Projects</h2>
+        <ul class="projects__list list-reset">
+          <li class="projects__item">
+            <div class="projects__wrap">
+              <a class="projects__link" href="https://almazka-code.github.io/photo-studio/" target="_blank"
+                aria-label="Photo preview of website Photo Studio">
+                <img class="projects__image" src="images/project1.jpg" alt="Photo preview of website Photo Studio">
+              </a>
+            </div>
+            <div class="box">
+              <h3 class="box__title">Website Photo Studio</h3>
+              <p class="box__descr">HTML, SCSS, Grid, JavaScript</p>
+              <div class="box__buttons">
+                <a class="btn btn-reset box__btn" href="https://github.com/almazka-code/photo-studio/tree/dev"
+                  target="_blank" aria-label="Link to github of Website Photo Studio">GitHub</a>
+                <a class="btn btn-reset box__btn" href="https://almazka-code.github.io/photo-studio/" target="_blank"
+                  aria-label="Link to website Photo Studio">Demo</a>
+              </div>
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="projects__wrap">
+              <a class="projects__link" href="https://almazka-code.github.io/evklid/" target="_blank"
+                aria-label="Photo preview of website Evklid">
+                <img class="projects__image" src="images/project2.jpg" alt="Photo preview of website Evklid">
+              </a>
+            </div>
+            <div class="box">
+              <h3 class="box__title">Website Evklid</h3>
+              <p class="box__descr">HTML, CSS, JavaScript</p>
+              <div class="box__buttons">
+                <a class="btn btn-reset box__btn" href="https://github.com/almazka-code/evklid/tree/dev" target="_blank"
+                  aria-label="Link to github of Website Evklid">GitHub</a>
+                <a class="btn btn-reset box__btn" href="https://almazka-code.github.io/evklid/" target="_blank"
+                  aria-label="Link to website Evklid">Demo</a>
+              </div>
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="projects__wrap">
+              <a class="projects__link" href="https://almazka-code.github.io/academy/" target="_blank"
+                aria-label="Photo preview of Website Academy 3D">
+                <img class="projects__image" src="images/project3.jpg" alt="Photo preview of Website Academy 3D">
+              </a>
+            </div>
+            <div class="box">
+              <h3 class="box__title">Website Academy&nbsp;3D</h3>
+              <p class="box__descr">HTML, CSS, Bootstrap, JavaScript</p>
+              <div class="box__buttons">
+                <a class="btn btn-reset box__btn" href="https://github.com/almazka-code/academy/tree/dev"
+                  target="_blank" aria-label="Link to github of website Academy 3D">GitHub</a>
+                <a class="btn btn-reset box__btn" href="https://almazka-code.github.io/academy/" target="_blank"
+                  aria-label="Link to website Academy 3D">Demo</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- section education -->
+
+    <section class="education section" id="education">
+      <div class="container education__container">
+        <h2 class="title">Education</h2>
+        <ul class="education__list list-reset">
+          <li class="education__item case">
+            <span class="case__year">2023&nbsp;&mdash; 2024</span>
+            <h3 class="case__title">RS&nbsp;School</h3>
+            <p class="case__program">JavaScript/Front-end</p>
+          </li>
+          <li class="education__item case">
+            <span class="case__year">2023</span>
+            <h3 class="case__title">FreeCodeCamp</h3>
+            <a class="case__link"
+              href="https://freecodecamp.org/certification/almazka/javascript-algorithms-and-data-structures"
+              target="_blank" aria-label="Link to certificate">
+              JavaScript Algorithms and Data Structures
+            </a>
+          </li>
+          <li class="education__item case">
+            <span class="case__year">2022&nbsp;&mdash; 2023</span>
+            <h3 class="case__title">Skillbox</h3>
+            <p class="case__program">Web Development</p>
+          </li>
+          <li class="education__item case">
+            <span class="case__year">2010&nbsp;&mdash; 2015</span>
+            <h3 class="case__title">State University ESPC</h3>
+            <p class="case__program">Engineer</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- section contacts -->
+
+    <section class="contacts section" id="contacts">
+      <div class="container contacts__container">
+        <h2 class="title contacts__title">Contact&nbsp;Me</h2>
+        <div class="contacts__wrap">
+          <address class="contacts__address">
+            <ul class="contacts__list list-reset">
+              <li class="contacts__item">
+                <div class="contacts__icon contacts__icon--location"></div>
+                <div class="contacts__box">
+                  <p class="contacts__name">Location</p>
+                  <p class="contacts__location">Astana, Kazakhstan</p>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <div class="contacts__icon contacts__icon--phone"></div>
+                <div class="contacts__box">
+                  <p class="contacts__name">Phone</p>
+                  <a class="contacts__phone" href="tel:+79999999999" aria-label="Link to phone number">+7&nbsp;999
+                    999-99-99</a>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <div class="contacts__icon contacts__icon--mail"></div>
+                <div class="contacts__box">
+                  <p class="contacts__name">Email</p>
+                  <a class="contacts__mail" href="mailto:almazkacode@gmail.com"
+                    aria-label="Link to email">almazkacode@gmail.com</a>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <div class="contacts__icon contacts__icon--discord"></div>
+                <div class="contacts__box">
+                  <p class="contacts__name">Discord</p>
+                  <p class="contacts__discord">almazka(@almazka-code)</p>
+                </div>
+              </li>
+            </ul>
+          </address>
+          <div class="form">
+            <form class="contacts__form" id="contacts-form" autocomplete="off" method="post">
+              <h3 class="form__title">Write me&nbsp;a&nbsp;message</h3>
+              <div class="form__box">
+                <input class="form__input" id="name" name="name" type="text" placeholder="Name" autocomplete="off"
+                  aria-label="Write your name">
+              </div>
+              <div class="form__box">
+                <input class="form__input" id="email" name="email" type="email" placeholder="E-mail" autocomplete="off"
+                  aria-label="Write your email">
+              </div>
+              <div class="form__box">
+                <input class="form__input" id="phone" name="phone" type="tel" placeholder="Phone number"
+                  autocomplete="off" aria-label="Write your phone number">
+              </div>
+              <div class="form__box">
+                <textarea class="form__input form__textarea" id="message" name="text" placeholder="Message"
+                  autocomplete="off" aria-label="Write your message"></textarea>
+              </div>
+              <button class="form__btn btn-reset btn" id="form_btn" type="submit" aria-label="submit button">Send
+                message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <a class="footer__logo" href="https://rs.school/js/" target="_blank"
+        aria-label="Link to course «JavaScript/Front-end of The Rolling Scopes Scholl">
+        <img src="images/rs_school_logo.svg" alt="The Rolling Scopes school logo">
+      </a>
+      <p class="footer__text">Copyright &copy;&nbsp;2023 Olga Smirnova<span class="footer__rights">. All Rights
+          Reserved</span></p>
+      <ul class="social list-reset">
+        <li class="social__item github">
+          <a href="https://github.com/almazka-code" target="_blank" aria-label="Link to GitHub">
+            <img class="icon" src="images/github.png" alt="Link to GitHub">
+          </a>
+        </li>
+        <li class="social__item linkedin">
+          <a href="https://www.linkedin.com/in/almazka/" target="_blank" aria-label="Link to LinkedIn">
+            <img class="icon" src="images/linkedin.png" alt="Link to LinkedIn">
+          </a>
+        </li>
+        <li class="social__item codewars">
+          <a href="https://www.codewars.com/users/almazka" target="_blank" aria-label="Link to Codewars">
+            <img class="icon" src="images/codewars-logo.png" alt="Link to Codewars">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script> <!--validator-->
+  <script src="js/inputmask.min.js"></script> <!--mask for phone number-->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script> emailjs.init('eEn6BNC2fkUKBDtUD') </script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
