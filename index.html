@@ -365,9 +365,9 @@
                   <input class="form__input" aria-label="Write your phone number" id="phone" type="tel" name="phone" placeholder="Phone number" autocomplete="off">
                 </div>
                 <div class="form__box">
-                  <textarea class="form__input form__textarea" aria-label="Write your message" name="text" placeholder="Message" autocomplete="off"></textarea>              
-                </div>              
-                <button class="form__btn btn-reset btn" aria-label="submit button" type="submit">Send message</button>
+                  <textarea class="form__input form__textarea" id="message" aria-label="Write your message" name="text" placeholder="Message" autocomplete="off"></textarea>
+                </div>
+                <button id="form_btn" class="form__btn btn-reset btn" aria-label="submit button" type="submit">Send message</button>
               </form>
             </div>
           </div>
@@ -404,6 +404,8 @@
     </footer> 
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script> <!--validator-->
     <script src="js/inputmask.min.js"></script> <!--mask for phone number-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"> emailjs.init('eEn6BNC2fkUKBDtUD') </script>
     <script src="js/script.js"></script>
   </body>
 </html>

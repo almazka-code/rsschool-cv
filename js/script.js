@@ -1,3 +1,28 @@
+// burger menu
+
+let burger = document.querySelector('.burger');
+let menu = document.querySelector('.header__nav');
+let menuLinks = menu.querySelectorAll('.nav__link');
+let closeBtnBurger = document.querySelector('.header__close');
+
+burger.addEventListener('click', function() {  
+  menu.classList.toggle('header__nav--active');
+  document.body.classList.toggle('stop-scroll');
+});
+
+closeBtnBurger.addEventListener('click', function() {  
+  menu.classList.remove('header__nav--active');  
+  document.body.classList.remove('stop-scroll');
+});
+
+menuLinks.forEach(function(el) {
+  el.addEventListener('click', function() {    
+    menu.classList.remove('header__nav--active');
+    document.body.classList.remove('stop-scroll');
+  });
+});
+
+
 // Cats API
 
 const button = document.querySelector(".code__btn");
@@ -22,9 +47,11 @@ button.addEventListener("click", () => {
 
 // validation
 
-let selector = document.querySelector("#phone");
+let selector = document.getElementById("phone");
+let form = document.getElementById("contacts-form");
 let im = new Inputmask("+7 (999) - 999 - 99 - 99");
 im.mask(selector);
+
 
 let validationForm = new JustValidate('#contacts-form',{
   errorLabelStyle: {
@@ -39,7 +66,7 @@ let validationForm = new JustValidate('#contacts-form',{
 validationForm
 .addField('#name', [
   {
-    rule: 'required', //поле обязательно для введения
+    rule: 'required',
     errorMessage: 'You did not enter a name',
   },
   {
@@ -81,28 +108,17 @@ validationForm
     },
     errorMessage: 'Incorrect phone number',
   },
-]);
+]).onSuccess((event) => {
+  console.log('Validation passes and form submitted', event);
 
-// burger menu
-
-let burger = document.querySelector('.burger');
-let menu = document.querySelector('.header__nav');
-let menuLinks = menu.querySelectorAll('.nav__link');
-let closeBtnBurger = document.querySelector('.header__close');
-
-burger.addEventListener('click', function() {  
-  menu.classList.toggle('header__nav--active');
-  document.body.classList.toggle('stop-scroll');
-});
-
-closeBtnBurger.addEventListener('click', function() {  
-  menu.classList.remove('header__nav--active');  
-  document.body.classList.remove('stop-scroll');
-});
-
-menuLinks.forEach(function(el) {
-  el.addEventListener('click', function() {    
-    menu.classList.remove('header__nav--active');
-    document.body.classList.remove('stop-scroll');
-  });
+  let params = {
+    from_name: document.getElementById("name").value,
+    email_id: document.getElementById("email").value,
+    phone_id: document.getElementById("phone").value,
+    message: document.getElementById("message").value
+  }
+  emailjs.send("service_lfiwoxs", "template_23v6srr", params).then(function() {
+    alert("Success!");
+    form.reset();
+  })
 });
