@@ -1,6 +1,6 @@
 @media (max-width: 1199.98px) {
   .profile__container {
-    grid-gap: 2rem;
+    gap: 32px;
   }
 
   .about__image {
@@ -12,9 +12,9 @@
   }
 
   .about__list {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    column-gap: 32px;
+    row-gap: 32px;
   }
 
   .footer__rights {
@@ -76,13 +76,15 @@
     z-index: 1000;
     margin-left: 0;
     margin-right: 0;
-    padding: 3rem;
+    padding: 48px;
     box-shadow: 0 0 5px #888;
     background-color: #fff;
     overflow-y: auto;
     visibility: hidden;
     transform: translateX(120%);
-    transition: visibility 0.3s ease, transform 0.3s ease;
+    transition:
+      visibility 0.3s ease,
+      transform 0.3s ease;
   }
 
   .nav__list {
@@ -91,7 +93,7 @@
 
   .nav__item:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
   }
 
   .header__nav--active {
@@ -99,28 +101,31 @@
     transform: none;
   }
 
-  .burger--active
-  .burger__line:nth-child(2) {
+  .burger--active .burger__line:nth-child(2) {
     opacity: 0;
   }
 
-  .burger--active
-  .burger__line:first-child {
+  .burger--active .burger__line:first-child {
     left: 25%;
     top: 50%;
     transform: rotate(45deg);
     transform-origin: center;
-    transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      top 0.3s ease,
+      left 0.3s ease;
   }
 
-  .burger--active
-  .burger__line:last-child {
+  .burger--active .burger__line:last-child {
     bottom: auto;
     left: 25%;
     top: 50%;
     transform: rotate(-45deg);
     transform-origin: center;
-    transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      top 0.3s ease,
+      left 0.3s ease;
   }
 
   .stop-scroll {
@@ -130,7 +135,7 @@
   /* end of the burger */
 
   .btn {
-    padding: 1.2rem;
+    padding: 20px;
     line-height: 1rem;
   }
 
@@ -139,19 +144,19 @@
   }
 
   .skills__list {
-    grid-gap: 2rem;
+    gap: 32px;
   }
 
   .code__list {
-    gap: 2rem;
+    gap: 32px;
   }
 
   .education__list {
-    grid-column-gap: 2rem;
+    column-gap: 32px;
   }
 
   .contacts__wrap {
-    gap: 2rem;
+    gap: 32px;
   }
 }
 
@@ -161,11 +166,11 @@
   }
 
   .header__container {
-    padding: 1rem 30px;
+    padding: 16px 30px;
   }
 
   .footer__container {
-    padding: 1rem 30px;
+    padding: 16px 30px;
   }
 
   .profile__image {
@@ -173,18 +178,18 @@
   }
 
   .profile__text {
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
   }
 
   .profile__title {
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
   }
 }
 
 @media (max-width: 767.98px) {
   .section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 
   .profile__container {
@@ -228,20 +233,20 @@
   }
 
   .header__container {
-    padding: 1rem 20px;
+    padding: 16px 20px;
   }
 
   .header__nav {
-    padding: 2rem;
+    padding: 32px;
   }
 
   .footer__container {
-    padding: 1rem 20px;
+    padding: 16px 20px;
   }
 
   .section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .profile__image img {
@@ -249,28 +254,28 @@
   }
 
   .btn {
-    padding: 0.8rem;
-    min-width: 6rem;
+    padding: 13px;
+    min-width: 96px;
   }
 
   .download {
-    margin-right: 1rem;
+    margin-right: 16px;
   }
 
   .profile__prof {
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
   }
 
   .social__item:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 16px;
   }
 
   .icon {
-    height:1.5rem;
+    height: 24px;
   }
 
   .title {
-    margin-bottom: 3rem;
+    margin-bottom: 48px;
   }
 
   .header__title {
@@ -278,68 +283,68 @@
   }
 
   .about__list {
-    grid-template-columns: repeat(auto-fit, minmax(16rem, auto));
+    grid-template-columns: repeat(auto-fit, minmax(256px, auto));
   }
 
   .skills__list {
-    grid-template-columns: repeat(auto-fit, minmax(16rem, auto));
+    grid-template-columns: repeat(auto-fit, minmax(256px, auto));
   }
 
   .card {
-    width: 12rem;
-    height: 12rem;
+    width: 192px;
+    height: 192px;
   }
 
   .projects__list {
-    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
   }
 
   .projects__item {
-    padding: 1rem;
+    padding: 16px;
   }
 
   .projects__wrap {
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
   }
 
   .box__descr {
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
   }
 
   .education__list {
-    grid-template-columns: repeat(auto-fill, minmax(16rem, auto));
+    grid-template-columns: repeat(auto-fill, minmax(256px, auto));
   }
 
   .education__item {
-    padding: 1rem;
+    padding: 16px;
   }
 
   .contacts__list {
-    padding: 1rem;
+    padding: 16px;
   }
 
   .contacts__item {
-    gap: 1rem;
+    gap: 16px;
   }
 
   .contacts__icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 24px;
+    height: 24px;
   }
 
   .form {
-    padding: 1rem;
+    padding: 16px;
   }
 
   .form__input {
-    min-width: 15rem;
+    min-width: 240px;
   }
 
   .form__textarea {
-    height: 10rem;
+    height: 160px;
   }
 
   .footer__logo {
-    width: 5rem;
+    width: 80px;
   }
 }
