@@ -154,19 +154,6 @@ ul {
   color: var(--light-blue);
 }
 
-.close {
-  display: none;
-}
-
-.close__btn {
-  width: 20px;
-  height: 20px;
-  background-image: url(../images/close.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .nav__list {
   display: flex;
   justify-content: space-between;
@@ -192,6 +179,11 @@ ul {
 
 .burger {
   display: none;
+  position: relative;
+  width: 45px;
+  height: 22px;
+  padding: 5px;
+  z-index: 20;
 }
 
 /* section profile */
@@ -483,7 +475,7 @@ ul {
 }
 
 /* section code */
-.code__list {
+/* .code__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -547,7 +539,7 @@ ul {
   height: 100%;
   width: 100%;
   object-fit: cover;
-}
+} */
 
 /* section projects */
 

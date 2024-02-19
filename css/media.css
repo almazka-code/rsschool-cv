@@ -21,119 +21,6 @@
     display: none;
   }
 
-  /* burger */
-
-  .burger {
-    position: relative;
-    display: block;
-    width: 30px;
-    height: 23px;
-    color: var(--black);
-  }
-
-  .burger:focus-visible {
-    outline: 0;
-    outline-offset: 3px;
-    outline: 2px solid var(--light-blue);
-  }
-
-  .burger__line {
-    position: absolute;
-    left: 50%;
-    width: 30px;
-    height: 3px;
-    background-color: var(--black);
-    transform: translateX(-50%);
-  }
-
-  .burger__line:nth-child(1) {
-    top: 0;
-  }
-
-  .burger__line:nth-child(3) {
-    bottom: 0;
-  }
-
-  .burger__line:nth-child(2) {
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .close {
-    display: flex;
-    justify-content: end;
-    position: static;
-    margin-bottom: 16px;
-  }
-
-  .header__nav {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    min-width: 230px;
-    height: 100vh;
-    z-index: 1000;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 48px;
-    box-shadow: 0 0 5px #888;
-    background-color: #fff;
-    overflow-y: auto;
-    visibility: hidden;
-    transform: translateX(120%);
-    transition:
-      visibility 0.3s ease,
-      transform 0.3s ease;
-  }
-
-  .nav__list {
-    flex-direction: column;
-  }
-
-  .nav__item:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 32px;
-  }
-
-  .header__nav--active {
-    visibility: visible;
-    transform: none;
-  }
-
-  .burger--active .burger__line:nth-child(2) {
-    opacity: 0;
-  }
-
-  .burger--active .burger__line:first-child {
-    left: 25%;
-    top: 50%;
-    transform: rotate(45deg);
-    transform-origin: center;
-    transition:
-      transform 0.3s ease,
-      top 0.3s ease,
-      left 0.3s ease;
-  }
-
-  .burger--active .burger__line:last-child {
-    bottom: auto;
-    left: 25%;
-    top: 50%;
-    transform: rotate(-45deg);
-    transform-origin: center;
-    transition:
-      transform 0.3s ease,
-      top 0.3s ease,
-      left 0.3s ease;
-  }
-
-  .stop-scroll {
-    overflow: hidden;
-  }
-
-  /* end of the burger */
-
   .btn {
     padding: 20px;
     line-height: 1rem;
@@ -166,7 +53,7 @@
   }
 
   .header__container {
-    padding: 16px 30px;
+    padding: 30px 30px;
   }
 
   .footer__container {
@@ -191,6 +78,93 @@
     padding-top: 64px;
     padding-bottom: 64px;
   }
+
+  /* burger */
+
+  .burger {
+    display: inline-block;
+    z-index: 200;
+  }
+
+  .burger__line {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--black);
+    left: 0;
+  }
+
+  .burger__line--first {
+    top: 0;
+  }
+
+  .burger__line--second {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .burger__line--third {
+    bottom: 0;
+  }
+
+  .burger--active .burger__line--second {
+    opacity: 0;
+  }
+
+  .burger--active .burger__line--first {
+    right: 25%;
+    top: 50%;
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: all 0.3s ease;
+  }
+
+  .burger--active .burger__line--third {
+    bottom: auto;
+    right: 25%;
+    top: 50%;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transition: all 0.3s ease;
+  }
+
+  .stop-scroll {
+    overflow: hidden;
+  }
+
+  .nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    min-width: 320px;
+    height: 100vh;
+    z-index: 100;
+    padding: 50px;
+    box-shadow: 0 0 5px #888;
+    background-color: #fff;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+  }
+
+  .nav--active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+
+  /* end of the burger */
 
   .profile__container {
     grid-template-columns: 1fr;
@@ -233,11 +207,7 @@
   }
 
   .header__container {
-    padding: 16px 20px;
-  }
-
-  .header__nav {
-    padding: 32px;
+    padding: 30px 20px;
   }
 
   .footer__container {

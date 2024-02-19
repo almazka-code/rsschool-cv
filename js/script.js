@@ -1,47 +1,37 @@
 // burger menu
 
-let burger = document.querySelector('.burger');
-let menu = document.querySelector('.header__nav');
-let menuLinks = menu.querySelectorAll('.nav__link');
-let closeBtnBurger = document.querySelector('.header__close');
+const burger = document.querySelector('.burger');
+const menuBurger = document.querySelector('.nav');
+const menuLinks = document.querySelectorAll('.nav__link');
+const body = document.querySelector('.body');
 
-burger.addEventListener('click', function() {
-  menu.classList.toggle('header__nav--active');
-  document.body.classList.toggle('stop-scroll');
-});
+const toggleMenu = function () {
+  burger.classList.toggle('burger--active');
+  menuBurger.classList.toggle('nav--active');
+  body.classList.toggle('stop-scroll');
+}
 
-closeBtnBurger.addEventListener('click', function() {
-  menu.classList.remove('header__nav--active');
-  document.body.classList.remove('stop-scroll');
+burger.addEventListener('click', function (e) {
+  e.stopPropagation();
+  toggleMenu();
 });
 
 menuLinks.forEach(function(el) {
   el.addEventListener('click', function() {
-    menu.classList.remove('header__nav--active');
-    document.body.classList.remove('stop-scroll');
+    burger.classList.remove('burger--active');
+    menuBurger.classList.remove('nav--active');
+    body.classList.remove('stop-scroll');
   });
 });
 
+body.addEventListener('click', function (e) {
+  const target = e.target;
+  const targetBurger = target == burger;
+  const targetMenu = target == menuBurger || menuBurger.contains(target);
+  const menuIsActive = menuBurger.classList.contains('nav--active');
 
-// Cats API
-
-const button = document.querySelector('.code__btn');
-const image = document.querySelector('.card__image');
-const url = 'https://api.thecatapi.com/v1/images/search';
-
-async function fetchHandler() {
-  try {
-    const response = await fetch(url);
-    const data = await response.json();
-    image.src = data[0].url;
-  } catch (error) {
-    console.log(error);
-  }
-}
-
-button.addEventListener('click', () => {
-  if (image.complete) {
-    fetchHandler();
+  if (!targetBurger && !targetMenu && menuIsActive) {
+    toggleMenu();
   }
 });
 
