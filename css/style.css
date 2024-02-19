@@ -122,8 +122,8 @@ ul {
   /* rgba(215, 236, 246)  цвет заднего фона аватарки*/
   /* --light-blue: rgb(109, 189, 225);
   --light-blue: rgb(78, 171, 238); */
-  --light-blue: rgba(109, 189, 225, 1);
-  --blue: rgba(214, 236, 246);
+  --light-blue: #6dbde1;
+  --blue: rgb(214, 236, 246);
   --light-grey: rgb(163, 163, 163);
   --dark-grey: rgb(53, 53, 53);
   --black: #000;
@@ -184,6 +184,57 @@ ul {
   height: 22px;
   padding: 5px;
   z-index: 20;
+}
+
+/* button upward */
+/* .upward {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 70px;
+  height: 70px;
+  background-image: url("../images/upward.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.upward.active {
+  visibility: visible;
+  opacity: 1;
+} */
+
+.progress {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 70px;
+  height: 70px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--light-blue);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.progress__value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--black);
 }
 
 /* section profile */

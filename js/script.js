@@ -35,6 +35,24 @@ body.addEventListener('click', function (e) {
   }
 });
 
+// button upward
+let calcScrollValue = () => {
+  let scrollProgress = document.querySelector('.progress');
+  let position = document.documentElement.scrollTop;
+  let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let scrollValue = Math.round((position * 100) / calcHeight);
+
+  position > 500 ? scrollProgress.style.display = 'flex' : scrollProgress.style.display = 'none';
+
+  scrollProgress.addEventListener('click', () => {
+    document.documentElement.scrollTop = 0;
+  })
+
+  scrollProgress.style.background = `conic-gradient(#6dbde1 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+}
+
+window.addEventListener('scroll', calcScrollValue);
+
 // validation
 
 let selector = document.getElementById('phone');

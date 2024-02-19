@@ -79,6 +79,11 @@
     padding-bottom: 64px;
   }
 
+  .progress {
+    right: 20px;
+    bottom: 20px;
+  }
+
   /* burger */
 
   .burger {
@@ -137,6 +142,7 @@
     position: fixed;
     right: 0;
     top: 0;
+    opacity: 0;
     width: 50%;
     min-width: 320px;
     height: 100vh;
