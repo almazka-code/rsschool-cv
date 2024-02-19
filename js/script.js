@@ -25,9 +25,9 @@ menuLinks.forEach(function(el) {
 
 // Cats API
 
-const button = document.querySelector(".code__btn");
-const image = document.querySelector(".card__image");
-const url = "https://api.thecatapi.com/v1/images/search";
+const button = document.querySelector('.code__btn');
+const image = document.querySelector('.card__image');
+const url = 'https://api.thecatapi.com/v1/images/search';
 
 async function fetchHandler() {
   try {
@@ -39,7 +39,7 @@ async function fetchHandler() {
   }
 }
 
-button.addEventListener("click", () => {
+button.addEventListener('click', () => {
   if (image.complete) {
     fetchHandler();
   }
@@ -47,9 +47,9 @@ button.addEventListener("click", () => {
 
 // validation
 
-let selector = document.getElementById("phone");
-let form = document.getElementById("contacts-form");
-let im = new Inputmask("+7 (999) - 999 - 99 - 99");
+let selector = document.getElementById('phone');
+let form = document.getElementById('contacts-form');
+let im = new Inputmask('+7 (999) - 999 - 99 - 99');
 im.mask(selector);
 
 
@@ -112,13 +112,13 @@ validationForm
   console.log('Validation passes and form submitted', event);
 
   let params = {
-    from_name: document.getElementById("name").value,
-    email_id: document.getElementById("email").value,
-    phone_id: document.getElementById("phone").value,
-    message: document.getElementById("message").value
+    from_name: document.getElementById('name').value,
+    email_id: document.getElementById('email').value,
+    phone_id: document.getElementById('phone').value,
+    message: document.getElementById('message').value
   }
-  emailjs.send("service_lfiwoxs", "template_23v6srr", params).then(function() {
-    alert("Success!");
+  emailjs.send('service_lfiwoxs', 'template_23v6srr', params).then(function() {
+    alert('Success!');
     form.reset();
   })
 });
