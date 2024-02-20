@@ -96,7 +96,7 @@
     display: inline-block;
     width: 100%;
     height: 2px;
-    background-color: var(--black);
+    background-color: var(--color-dark);
     left: 0;
   }
 
@@ -148,8 +148,8 @@
     height: 100vh;
     z-index: 100;
     padding: 50px;
-    box-shadow: 0 0 5px #888;
-    background-color: #fff;
+    box-shadow: 0 0 30px var(--color-text);
+    background-color: var(--color-light);
     visibility: hidden;
     transform: translateX(100%);
     transition: all 0.3s ease;
