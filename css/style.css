@@ -765,7 +765,7 @@ ul {
 .form__input {
   width: 100%;
   min-width: 320px;
-  height: 50px;
+  height: 70px;
   margin-bottom: 24px;
   padding: 27px;
   border: none;
@@ -783,6 +783,15 @@ ul {
   color: var(--color-primary);
 }
 
+.is-invalid {
+  border: 1px solid red;
+}
+
+.form__input:focus-visible.is-invalid,
+.form__input:active:not(:focus-visible).is-invalid {
+  outline: 0;
+}
+
 .form__textarea {
   resize: none;
   height: 160px;
@@ -796,7 +805,7 @@ ul {
 
 .form__box .just-validate-error-label {
   position: absolute;
-  bottom: 50px;
+  bottom: 65px;
   left: 24px;
   font-size: clamp(0.56rem, 0.53rem + 0.18vw, 0.7rem);
 }
