@@ -481,88 +481,38 @@ ul {
   );
 }
 
-.html {
-  width: 90%;
-  animation: html 2s;
-}
-
-@keyframes html {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
-}
-
-.css {
-  width: 68%;
-  animation: css 2s;
-}
-
-@keyframes css {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 68%;
-  }
-}
-
-.js {
-  width: 15%;
-  animation: js 2s;
-}
-
-@keyframes js {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 15%;
-  }
-}
-
-.git {
-  width: 50%;
-  animation: git 2s;
-}
-
-@keyframes git {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 50%;
-  }
-}
-
-.scss {
-  width: 70%;
-  animation: scss 2s;
-}
-
-@keyframes scss {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-
+.html,
+.css,
+.js,
+.git,
+.scss,
 .figma {
-  width: 30%;
-  animation: figma 2s;
+  width: 0%;
+  transition: all 2s;
 }
 
-@keyframes figma {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 30%;
-  }
+.html.active {
+  width: 90%;
+}
+
+.css.active {
+  width: 68%;
+}
+
+.js.active {
+  width: 15%;
+}
+
+.git.active {
+  width: 50%;
+}
+
+.scss.active {
+  width: 70%;
+}
+
+.figma.active {
+  width: 30%;
 }
 
 /* section code */
