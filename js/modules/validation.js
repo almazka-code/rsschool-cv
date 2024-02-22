@@ -73,7 +73,7 @@ validationForm
     errorMessage: 'Incorrect phone number',
   },
 ]).onSuccess((event) => {
-  console.log('Validation passes and form submitted', event);
+  // console.log('Validation passes and form submitted', event);
 
   let params = {
     from_name: document.getElementById('name').value,
@@ -82,7 +82,13 @@ validationForm
     message: document.getElementById('message').value
   }
   emailjs.send('service_lfiwoxs', 'template_23v6srr', params).then(function() {
-    alert('Success!');
+    // надпись об успешной регистрации
+    const notification = document.querySelector('.notification');
+    notification.classList.add('notification--active');
+    setTimeout(function () {
+    notification.classList.remove('notification--active');
+    }, 4000);
+
     form.reset();
   })
 });
