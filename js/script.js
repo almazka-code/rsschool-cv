@@ -37,18 +37,18 @@ body.addEventListener('click', function (e) {
 
 // button upward
 let calcScrollValue = () => {
-  let scrollProgress = document.querySelector('.progress');
-  let position = document.documentElement.scrollTop;
-  let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  let scrollValue = Math.round((position * 100) / calcHeight);
+  const scrollUpward = document.querySelector('.upward');
+  const position = document.documentElement.scrollTop;
+  const calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrollValue = Math.round((position * 100) / calcHeight);
 
-  position > 500 ? scrollProgress.style.display = 'flex' : scrollProgress.style.display = 'none';
+  position > 500 ? scrollUpward.style.display = 'flex' : scrollUpward.style.display = 'none';
 
-  scrollProgress.addEventListener('click', () => {
+  scrollUpward.addEventListener('click', () => {
     document.documentElement.scrollTop = 0;
   })
 
-  scrollProgress.style.background = `conic-gradient(#6dbde1 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+  scrollUpward.style.background = `conic-gradient(#6dbde1 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
 }
 
 window.addEventListener('scroll', calcScrollValue);

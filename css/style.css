@@ -227,7 +227,7 @@ ul {
 }
 
 /* button upward */
-.progress {
+.upward {
   position: fixed;
   right: 50px;
   bottom: 50px;
@@ -242,7 +242,7 @@ ul {
   z-index: 100;
 }
 
-.progress__value {
+.upward__value {
   display: block;
   height: calc(100% - 15px);
   width: calc(100% - 15px);
